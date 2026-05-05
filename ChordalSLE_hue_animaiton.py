@@ -4,8 +4,8 @@ from matplotlib.animation import FuncAnimation, PillowWriter
 import loew
 
 
-seed_value =1000
-kappa = 6
+seed_value =1
+kappa = 1
 np.random.seed(seed_value)
 t = np.linspace(0.0, 1, 1000)
 fBm = loew.misc.brownian_motion(t, kappa)
@@ -14,8 +14,8 @@ print("Computing trace...")
 asle = loew.chordal.trace(t, fBm)
 print("Done.")
 
-res = 2000
-x = np.linspace(-2, 2, res)
+res = 1000
+x = np.linspace(-1, 3, res)
 y = np.linspace(0.001, 3, res)
 X, Y = np.meshgrid(x, y)
 Z = X + 1j * Y

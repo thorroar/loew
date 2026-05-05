@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import loew
 
 np.random.seed(1233)
-kappa = 2
+kappa = 10
 t = np.linspace(0.0, 1.0, 1000)
 fBm = loew.misc.brownian_motion(t, kappa)
 
